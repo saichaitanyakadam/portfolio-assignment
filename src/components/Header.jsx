@@ -5,7 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="flex w-full justify-between px-5 lg:px-[130px] h-[56px] py-3 bg-transparent relative">
+    <nav className="flex w-full justify-between px-5 lg:px-[130px] h-[56px] py-3 bg-transparent">
       <h2 className="text-[#25282B] text-[18px] font-[700]">Madelyn Torff</h2>
       <div className="gap-[48px] font-[500] text-[#25282B] text-[18px] hidden lg:flex">
         <a href="#about">About</a>
@@ -22,7 +22,7 @@ const Header = () => {
 
       <div
         className={`w-[60vw] flex flex-col absolute top-0 ${
-          isOpen ? "right-[0]" : "right-[-100%]"
+          isOpen ? "right-[0]" : "right-[-100%] hidden  "
         } min-h-[100vh] text-black bg-[#efd38c] ease-in-out duration-1000 lg:hidden`}
       >
         <RxCross2
